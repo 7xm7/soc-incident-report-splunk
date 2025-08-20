@@ -15,7 +15,7 @@ Using Splunk queries on HTTP POST requests, we extracted credentials and determi
 - Successful credential: `batman`  
 - Attacker IP and user-agent revealed automated brute force activity.  
 
-**Screenshot:**  
+![Task 1 Screenshot](screenshots-splunk/splunk11.png) 
 
 
 ---
@@ -29,7 +29,8 @@ Splunk event logs confirmed process creation on the victim host.
 - User context: `NT AUTHORITY\IUSR`  
 - Hash (MD5) was extracted to confirm integrity of the sample.  
 
-**Screenshot:**  
+![Task 2 Screenshot](screenshots-splunk/payload.png) 
+ 
 
 
 ---
@@ -42,7 +43,7 @@ HTTP logs showed access to `/poisonivy-is-coming-for-you-batman.jpeg`.
 - Defacement file hosted externally.  
 - Traffic originated from the compromised web server.  
 
-**Screenshot:**  
+![Task 3 Screenshot](screenshots-splunk/defacement.png) 
 
 
 ---
@@ -55,7 +56,8 @@ This confirmed the presence of a C2 channel.
 - C2 FQDN: `prankglassinebracket.jumpingcrab.com`  
 - Domain associated with the defacement activity.  
 
-**Screenshot (optional):**  
+![Task 4 Screenshot](screenshots-splunk/c2.png) 
+
 
 
 ---
